@@ -16,4 +16,5 @@ Firstly, place the three provided .py files inside a folder (project2.py, client
 Also note that the project must be run using python version 3.2 or higher.
 
 *Known bugs*
+
 The program spawns client subprocesses for all the nodes except for the last node and spawns server subprocesses for all the nodes except for the first node. Therefore, for n nodes, 2𝑛 − 2 subprocesses would be spawned. If the number of nodes becomes rather large, considerable pressure will be put on the system’s CPU, which is dissatisfactory. Moreover, with large number of nodes, the length of the transferred messages between servers and clients would increase, which would cause problems as the receiver only receives 1024 bytes.
