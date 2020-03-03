@@ -1,6 +1,6 @@
 # Dijkstra-LinkState
 
-*Project Description*
+## Project Description
 
 The project implements all of the parts from the project requirements, which are as follows:
 1) Read in the graph configuration file.
@@ -15,6 +15,6 @@ Guide for program use
 Firstly, place the three provided .py files inside a folder (project2.py, client.py and server.py). Accordingly, direct to the created directory using command line prompt and enter the following command: “python project2.py <filename.txt><startingNode>”, where filename.txt and startingNode are the file name and the starting node for Dijkstra’s algorithm chosen by the user respectively. It should be mentioned that the user can choose not to enter the <startingNode>. Consequently, the first node read from the file would be arbitrarily chosen. Note that the mentioned command should be changed when using the computer systems available in the XJTLU computer lab. The acceptable command by the mentioned systems is as follows: C:\Python32\python.exe project2.py <filename.txt> <startingNode>”
 Also note that the project must be run using python version 3.2 or higher.
 
-*Known bugs*
+## Known bugs
 
 The program spawns client subprocesses for all the nodes except for the last node and spawns server subprocesses for all the nodes except for the first node. Therefore, for n nodes, 2𝑛 − 2 subprocesses would be spawned. If the number of nodes becomes rather large, considerable pressure will be put on the system’s CPU, which is dissatisfactory. Moreover, with large number of nodes, the length of the transferred messages between servers and clients would increase, which would cause problems as the receiver only receives 1024 bytes.
